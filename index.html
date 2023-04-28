@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<style>
+header {
+  background-color: #372F30;
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #372F30;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.Header{
+	text-decoration: underline;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.SubHeader{
+    text-decoration: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.SubHeaderNav
+{
+    text-decoration: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+}
+.SubHeaderLink
+{
+
+}
+a.SubHeaderLink:link{
+    color: mediumspringgreen;
+}
+a.SubHeaderLink:visited{
+    color: violet;
+}
+.ProjectTitle{
+	text-decoration: underline;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.ProjectImage{
+	width: 200px;
+	height: 200px;
+}
+.ProjectImage2{
+	width: 110%;
+	height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ButtonLink{
+    color: #ffffff;
+    background-color: #71D09F;
+    border-radius: 6px;
+    outline: none;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+</style>
+
+
+<head>
+	<title>
+		Ryan Hunt's Portfolio Page
+	</title>
+</head>
+<body>
+    <header>
+    	<h1 class="Header"> 
+    		Welcome to Ryan Hunt's Portfolio Page! 
+    	</h1>
+    </header>
+    <h3 class="SubHeader"> 
+    	Glad to have you here! 
+    </h3>
+	<p class="Details"> 
+		Contained within are some examples of the work that I have done in the past, from simple programming projects to larger computer games that I have had a part in. 
+        <p class="Details"> 
+            Feel free to browse and visit the given links and if any of this interests you, I am always open to talk.
+        </p>
+	</p>
+    <section>
+        <nav>
+            <h2 class="SubHeaderNav"> Contact Info: </h2>
+            <ul>
+                <li>
+                	<h3 class="Email"> Email: 
+                        <h3>
+                    		<a class="SubHeaderLink" href="mailto: huntr2work@gmail.com">
+                    			Ryan's Email (huntr2work@gmail.com)
+                    		</a> 
+                        </h3>
+                	</h3>
+                </li>
+                <li>
+                	<h3 class="PhoneNumber"> Phone Number: 
+                        <h3>
+                            (631) 902-5834
+                        </h3>
+                	</h3>
+                </li>
+            </ul>
+            <h2 class="SubHeaderNav"> Links to other pages: </h2>
+            <ul>
+                <li>
+                    <h3> LinkedIn: 
+                    	<a class="SubHeaderLink" href="https://www.linkedin.com/in/ryan-hunt-915b481a1/"> Here </a>
+                    </h3>
+                </li>
+                <li>
+                    <h3> GitHub Page:
+                    	<a class="SubHeaderLink" href="https://github.com/FryGuy1348"> Here </a>
+                    </h3>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <h2 class="ProjectTitle"> Game_Select </h2>
+            <img class="ProjectImage" src="file:///C:\Users\ryanp\Documents\GitHub\EGDProject3\Assets\Art\Poster_Draft.png" alt="Game_Select Title Screen">
+            <h4 class="SubHeader">Experimental Game Design Final Project</h4>
+            <p>
+                Project:Game_Select is a multi genre exploration game that takes the player through various snippets of Gaming, allowing them to play through and experiment with different genres. Taking control of Pixal, a Game Asset that has gotten knocked off their path to implementation, players will have to Jump, Shoot, and Magic their way through a myriad world overcome with glitches, bugs, and errors in order to find their place in the system.
+            </p>
+            <a class = "ButtonLink" href="https://teammix.itch.io/game-select">
+            	Itch.io Game Page
+            </a>
+        </article>
+        
+        <article>
+            <h2 class="ProjectTitle"> Certified Doomster </h2>
+            <img class="ProjectImage2" src="file:///C:\Users\ryanp\Pictures\Saved Pictures\Important\title_screen_logo.png" alt="Certified Doomster Title Screen">
+            <h4 class="SubHeader">Spring 2021 Away Semester Project</h4>
+            <p>
+                A fully developed turn-based RPG available on Itch.io as part of GAMC Games. Made using the Unity game engine. Developed the battle system (Status Effects, Position Swapping, UI elements like sprite flashing and damage numbers, items, etc.), the JSON based save manager, and helped implement overworld pickup items and NPCs.
+            </p>
+            <a class = "ButtonLink" href="https://gamc.itch.io/certified-doomster">
+            	Itch.io Game Page
+            </a>
+        </article>
+        
+        <article>
+            <h2 class="ProjectTitle"> MEGA MECHA FIGHT NIGHT </h2>
+            <img class="ProjectImage" src="file:///C:\Users\ryanp\Pictures\Saved Pictures\Important\robo2.jpg" alt="Robot">
+            <h4 class="SubHeader">Unreal Engine Game Development Project</h4>
+            <p>
+                A partially developed action/beat-em-up game made using Unreal Engine 4, where 2 players take control of the top and bottom half of a mech. Developed multiple UI elements (HUD and menus), took over development of the combat/attack systems (combos, co-op attacks / controls) and implementation of animations.
+            </p>
+            <a class = "ButtonLink" href="https://8f8fdf5d-d411-4046-abd4-ca9c897244c3.filesusr.com/archives/687900_1a0f79b59b7f452499adb458e3ac793e.zip?dn=MegaMechaFightNightFinal.zip">
+            	Download Build Files
+            </a>
+        </article>
+        
+        <article>
+            <h2 class="ProjectTitle"> Data Structures C++ Projects </h2>
+            <p>
+            	Various projects built primarily using C++ and compiled/debugged via the Linux Command Line Program, Ubuntu. The goals of these projects range from Image Recognition to Text Parsing, as well as simple Puzzle Solvers.
+            </p>
+            <a class = "ButtonLink" href="https://8f8fdf5d-d411-4046-abd4-ca9c897244c3.filesusr.com/archives/687900_3af3e8d773684cd893cfa7333e1166ab.zip?dn=Data_Structures.zip"> Zipped Files Here 
+            </a>
+        </article>
+
+        <article>
+            <h2 class="ProjectTitle"> SELF-DRIVING CAR IN CARLA </h2>
+            <img class="ProjectImage" src="file:///C:\Users\ryanp\Pictures\Saved Pictures\Important\Carla.jpg" alt="CARLA-Self-Driving-Car">
+            <h4  class="SubHeader"> Team-Based Machine Learning / AI project using Python </h4>
+            <p>
+            	Worked with a team on a final project for my Machine Learning and AI class (Fall 2021). Used the CARLA framework to make the beginning of a Self-Driving Car AI system. Uses python code and Unreal Engine.
+            </p>
+            <a class = "ButtonLink" href="https://github.com/sirmammingtonham/self-driving-car-carla.git"> GitHub Repository Here 
+            </a>
+        </article>
+    </section>
+</body>
